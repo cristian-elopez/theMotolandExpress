@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background-color: #EEEEEE;
+}
+nav {
+    width: 100%;
+}
+a {
+    color: #F3E8EE;
+    text-decoration: none;
+}
+a:hover {
+    color: #B54100;
+
+}
+.img-motocross {
+    width: 8em;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.encabezado {
+    margin: 0;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #2E2C2F;
+}
+.list-navbar {
+    list-style: none; 
+    width: 65%;
+}
+@media (max-width: 425px) {
+    .flex-container {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .encabezado {
+        padding: 10px 0px;
+    }
+}
+/*section*/
+.section-flex-container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 60px 80px 60px 80px;
+}
+.section-flex-container .info-container {
+    width: 35%;
+}
+.section-flex-container .img-container {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+.company-img {
+    width: 80%;
+    border-radius: 5px;
+}
+.h1-text {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    font-weight: 900;
+    color: #B54100;
+}
+.buttons {
+    width: max-content;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 25px;
+    border: none;
+}
+.first-button {
+    background-color: #B54100;
+    color: #ffffff;
+}
+.second-button {
+    border: solid #B54100 2px;
+    color: #2E2C2F;    
+}
+.introduccion-container {
+    width: 75%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px 50px 30px 50px;
+}
+.introduccion-container p {
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
