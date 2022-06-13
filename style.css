@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    background-color: #EEEEEE;
+    font-weight: 600;
+    background-color: #dddddd;
 }
+
+/* nav */
+
 nav {
     width: 100%;
 }
@@ -24,6 +27,7 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 .encabezado {
     margin: 0;
@@ -35,6 +39,9 @@ a:hover {
     list-style: none; 
     width: 65%;
 }
+
+/* header`s media query */
+
 @media (max-width: 425px) {
     .flex-container {
         flex-direction: column;
@@ -45,15 +52,20 @@ a:hover {
         padding: 10px 0px;
     }
 }
-/*section*/
+
+/* first section */
+
 .section-flex-container {
     background-color: #ffffff;
-    display: flex;
     justify-content: space-around;
     width: 75%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 60px 80px 60px 80px;
+}
+.home-section{
+    display: flex;
 }
 .section-flex-container .info-container {
     width: 45%;
@@ -64,8 +76,8 @@ a:hover {
     justify-content: right;
 }
 .company-img {
-    width: 500px;
-    height: 400px;
+    width: 75%;
+    height: 100%;
     border-radius: 5px;
 }
 .h1-text {
@@ -89,7 +101,7 @@ a:hover {
 }
 .first-button:hover {
     background-color: #2E2C2F;
-    border: solid #B54100 2px;
+    border: solid #2E2C2F 2px;
 }
 .second-button {
     border: solid #B54100 2px;
@@ -99,19 +111,17 @@ a:hover {
     background-color: #B54100;
     color: #ffffff;
 }
-.introduccion-container {
-    width: 75%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-    padding: 60px 80px 60px 80px;
-}
-.introduccion-container p {
-    text-align: center;
+
+/* second section */
+
+.section-flex-container p {
+    margin: 0;
     padding-right: 10%;
     padding-left: 10%;
 }
+
+/* first section media query */
+
 @media (max-width: 768px) {
     .section-flex-container {
         display: flex;
@@ -130,17 +140,60 @@ a:hover {
         justify-content: center;
         padding: 20px 0 20px 0;
     }
+    .section-flex-container p:first-child {
+        padding-top: 30px;
+    }
+    .section-flex-container p:nth-child(2) {
+        padding-bottom: 30px;
+    }
     .company-img {
         width: 90%;
         height: 80%;
     }
-    .introduccion-container {
-        width: 90%;
-        padding: 0;
-    }
-    .introduccion-container p {
-        padding: 30px;
-    }
     .buttons {
         margin: 5px;
     }
+}
+
+/* third section */
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work-container h3 {
+    font-size: 2em;
+    margin-top: 0;
+}
+.work-container h4 {
+    padding-bottom: 20px;
+}
+.benefits-container {
+    width: 30%;
+}
+.benefits-container h4 {
+    font-weight: 700;
+}
+.benefits-container img{
+    width: 50%;
+}
+.steps-container {
+    width: 20%;
+}
+.steps-container img{
+    width: 30%;
+}
+@media (max-width: 425px) {
+    .benefits-container, .steps-container {
+        width: 85%;
+        padding: 15px;
+    }
+    .work-container h3 {
+    margin-top: 15px;
+}
+}
+
+
+
