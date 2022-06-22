@@ -19,7 +19,7 @@ a:hover {
     color: #B54100;
 
 }
-.img-motocross {
+.img-logo {
     width: 8em;
 }
 .flex-container {
@@ -37,7 +37,7 @@ a:hover {
 }
 .list-navbar {
     list-style: none; 
-    width: 65%;
+    width: 50%;
 }
 
 /* header`s media query */
@@ -66,21 +66,24 @@ a:hover {
 }
 .home-section{
     display: flex;
+    justify-content: space-around;
 }
 .section-flex-container .info-container {
     width: 45%;
 }
 .section-flex-container .img-container {
-    width: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     justify-content: right;
+    margin: auto;
 }
 .company-img {
-    width: 75%;
-    height: 100%;
+    width: 90%;
+    max-width: 900px;
     border-radius: 5px;
 }
-.h1-text {
+.info-container h1 {
     font-family: 'Lobster', cursive;
     font-size: 3em;
     font-weight: 900;
@@ -127,8 +130,8 @@ a:hover {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 90%;
-        padding: 0;
+        width: 85%;
+        padding: 10px;
     }
     .section-flex-container .info-container {
         width: 90%;
@@ -185,6 +188,9 @@ a:hover {
 .steps-container img{
     width: 30%;
 }
+
+/* third section media query */
+
 @media (max-width: 425px) {
     .benefits-container, .steps-container {
         width: 85%;
@@ -192,5 +198,112 @@ a:hover {
     }
     .work-container h3 {
         margin-top: 15px;
+    }
+}
+
+/* fourth section */
+
+.container-cards {
+    width: 80%;
+}
+.card {
+    width: 30%;
+    box-shadow: 2px 5px 23px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 2px 5px 23px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 5px 23px 0px rgba(0,0,0,0.5);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: transform 100ms ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card a {
+    color: #000000;
+}
+.clientes-img {
+    width: 30%;
+}
+
+/* fourth section media query */
+
+@media (max-width: 425px) {
+    .container-cards {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .card {
+        width: 60%;
+    }
+    .clientes-img {
+        width: 60%;
+        padding-top: 30px;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #2E2C2F;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding: 60px 80px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-section {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer h4 {
+    font-size: 2em;
+}
+.footer-img-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: right;
+    margin: auto;
+}
+.footer-img-container img {
+    width: 60%;
+}
+.info-footer {
+    width: 50%;
+}
+
+/* media footer */
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-img-container img {
+        width: 80%;
+    }
+    .footer-section {
+        width: 90%;
+    }
+    .info-footer {
+        width: 100%;
     }
 }
